@@ -3,7 +3,7 @@ export interface LogoProps {
   showText?: boolean
 }
 
-export default function Logo({ variant = 'header', showText = true }: LogoProps) {
+export function Logo({ variant = 'header', showText = true }: LogoProps) {
   const height = variant === 'header' ? 32 : 40
 
   return (
