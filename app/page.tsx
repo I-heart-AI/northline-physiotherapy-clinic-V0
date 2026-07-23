@@ -3,7 +3,15 @@
 import { useState } from 'react'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { StickyMobileBookCTA } from '@/components/layout/StickyMobileBookCTA'
 import { BookingDialog } from '@/components/booking/BookingDialog'
+import { HeroSection } from '@/components/sections/HeroSection'
+import { ServiceOverviewSection } from '@/components/sections/ServiceOverviewSection'
+import { AssessmentProcessSection } from '@/components/sections/AssessmentProcessSection'
+import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection'
+import { SocialProofSection } from '@/components/sections/SocialProofSection'
+import { PricingAndFAQSection } from '@/components/sections/PricingAndFAQSection'
+import { CTASection } from '@/components/sections/CTASection'
 
 export default function Page() {
   const [bookingOpen, setBookingOpen] = useState(false)
@@ -19,27 +27,18 @@ export default function Page() {
       <Header onBookClick={() => handleBookClick('header')} />
 
       <main className="flex-1">
-        {/* Placeholder for content sections */}
-        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-24">
-          <div className="text-center space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              Northline Physiotherapy Clinic
-            </h1>
-            <p className="text-lg text-muted max-w-2xl mx-auto">
-              Phase 2 layout components are ready. Hero and content sections coming in Phase 3.
-            </p>
-            <button
-              onClick={() => handleBookClick('hero')}
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary hover:bg-primary-light text-white font-medium rounded transition-colors"
-              data-cta-source="hero"
-            >
-              Book Assessment
-            </button>
-          </div>
-        </div>
+        <HeroSection onBookClick={() => handleBookClick('hero')} />
+        <ServiceOverviewSection onBookClick={() => handleBookClick('service-overview')} />
+        <AssessmentProcessSection onBookClick={() => handleBookClick('process')} />
+        <WhyChooseUsSection onBookClick={() => handleBookClick('why-choose-us')} />
+        <SocialProofSection />
+        <PricingAndFAQSection onBookClick={() => handleBookClick('pricing')} />
+        <CTASection onBookClick={() => handleBookClick('final-cta')} />
       </main>
 
       <Footer />
+
+      <StickyMobileBookCTA onBookClick={() => handleBookClick('sticky-mobile')} />
 
       <BookingDialog
         isOpen={bookingOpen}
