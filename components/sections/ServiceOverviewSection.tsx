@@ -14,7 +14,7 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
   }
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+    <section id="initial-assessment" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text content */}
@@ -56,7 +56,7 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
               className="bg-primary hover:bg-primary-light text-white font-semibold px-6 py-2.5"
               data-cta-source="service-overview"
             >
-              Schedule Your Assessment
+              Book Your Initial Assessment
             </Button>
           </div>
 
@@ -75,10 +75,6 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
               <div>
                 <p className="text-sm font-semibold text-primary mb-2">Outcome</p>
                 <p className="text-base text-foreground">You&apos;ll leave with a clear understanding and next steps</p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-primary mb-2">Investment</p>
-                <p className="text-base text-foreground">Initial assessment pricing available on request</p>
               </div>
             </div>
           </div>

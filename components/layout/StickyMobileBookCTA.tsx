@@ -53,7 +53,7 @@ export function StickyMobileBookCTA({ onBookClick }: StickyMobileBookCTAProps) {
           className="bg-primary hover:bg-primary-light text-white font-semibold px-5 py-2 text-sm flex-shrink-0"
           data-cta-source="sticky"
         >
-          Book Now
+          Book Your Initial Assessment
         </Button>
       </div>
     </div>

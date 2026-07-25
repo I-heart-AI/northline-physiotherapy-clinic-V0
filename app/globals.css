@@ -99,4 +99,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor scroll targets by sticky header height (~73px) plus 24px breathing room */
+    scroll-padding-top: 97px;
+  }
 }

@@ -32,7 +32,7 @@ export function AssessmentProcessSection({ onBookClick }: AssessmentProcessSecti
   ]
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="process" className="w-full py-12 md:py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
@@ -78,7 +78,7 @@ export function AssessmentProcessSection({ onBookClick }: AssessmentProcessSecti
             className="bg-primary hover:bg-primary-light text-white font-semibold px-8 py-3"
             data-cta-source="process"
           >
-            Start Your Assessment Today
+            Book Your Initial Assessment
           </Button>
         </div>
       </div>

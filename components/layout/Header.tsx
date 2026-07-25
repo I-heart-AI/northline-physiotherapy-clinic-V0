@@ -14,9 +14,11 @@ export function Header({ onBookClick }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
-    { label: 'Why Choose Us', href: '#why-us' },
+    { label: 'Initial Assessment', href: '#initial-assessment' },
     { label: 'Our Process', href: '#process' },
-    { label: 'Services', href: '#services' },
+    { label: 'Why Northline', href: '#why-northline' },
+    { label: 'Reviews', href: '#reviews' },
+    { label: 'FAQ', href: '#faq' },
   ]
 
   return (
@@ -48,7 +50,7 @@ export function Header({ onBookClick }: HeaderProps) {
               className="hidden md:inline-flex bg-primary hover:bg-primary-light text-white"
               data-cta-source="header-desktop"
             >
-              Book Assessment
+              Book Your Initial Assessment
             </Button>
 
             {/* Mobile Menu Button */}
@@ -83,10 +85,10 @@ export function Header({ onBookClick }: HeaderProps) {
                   setMobileMenuOpen(false)
                 }}
                 className="w-full bg-primary hover:bg-primary-light text-white mt-2"
-                data-cta-source="header-mobile"
-              >
-                Book Assessment
-              </Button>
+                  data-cta-source="header-mobile"
+                >
+                  Book Your Initial Assessment
+                </Button>
             </div>
           </nav>
         )}

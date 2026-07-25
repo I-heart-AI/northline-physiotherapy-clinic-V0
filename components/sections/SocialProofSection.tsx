@@ -6,7 +6,7 @@ import { patientStories } from '@/data/patient-stories'
 
 export function SocialProofSection() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-white">
+    <section id="reviews" className="w-full py-12 md:py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 md:mb-16 text-center">

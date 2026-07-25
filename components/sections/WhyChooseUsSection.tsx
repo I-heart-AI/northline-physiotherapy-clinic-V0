@@ -34,7 +34,7 @@ export function WhyChooseUsSection({ onBookClick }: WhyChooseUsSectionProps) {
   ]
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+    <section id="why-northline" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image */}
@@ -81,7 +81,7 @@ export function WhyChooseUsSection({ onBookClick }: WhyChooseUsSectionProps) {
               className="bg-primary hover:bg-primary-light text-white font-semibold px-6 py-2.5"
               data-cta-source="why-choose-us"
             >
-              Book Your Assessment
+              Book Your Initial Assessment
             </Button>
           </div>
         </div>

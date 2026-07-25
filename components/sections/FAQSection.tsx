@@ -8,7 +8,7 @@ export function FAQSection() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(0)
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+    <section id="faq" className="w-full py-12 md:py-16 lg:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         {/* FAQ section */}
         <div>

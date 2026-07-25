@@ -11,17 +11,16 @@ export function Footer() {
     {
       title: 'Services',
       links: [
-        { label: 'Physiotherapy Assessment', href: '#services' },
-        { label: 'Sports Injury Recovery', href: '#services' },
-        { label: 'Post-Surgical Rehab', href: '#services' },
+        { label: 'Initial Assessment', href: '#initial-assessment' },
+        { label: 'Our Process', href: '#process' },
+        { label: 'FAQ', href: '#faq' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { label: 'About Us', href: '#why-us' },
-        { label: 'Our Team', href: '#team' },
-        { label: 'Contact', href: '#contact' },
+        { label: 'Why Northline', href: '#why-northline' },
+        { label: 'Patient Reviews', href: '#reviews' },
       ],
     },
     {
