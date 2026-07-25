@@ -10,7 +10,6 @@ import { ServiceOverviewSection } from '@/components/sections/ServiceOverviewSec
 import { AssessmentProcessSection } from '@/components/sections/AssessmentProcessSection'
 import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection'
 import { SocialProofSection } from '@/components/sections/SocialProofSection'
-import { PricingAndFAQSection } from '@/components/sections/PricingAndFAQSection'
 import { CTASection } from '@/components/sections/CTASection'
 
 export default function Page() {
@@ -32,7 +31,6 @@ export default function Page() {
         <AssessmentProcessSection onBookClick={() => handleBookClick('process')} />
         <WhyChooseUsSection onBookClick={() => handleBookClick('why-choose-us')} />
         <SocialProofSection />
-        <PricingAndFAQSection onBookClick={() => handleBookClick('pricing')} />
         <CTASection onBookClick={() => handleBookClick('final-cta')} />
       </main>
 
