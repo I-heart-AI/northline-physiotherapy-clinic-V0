@@ -5,10 +5,6 @@ import { Card } from '@/components/ui/card'
 import { patientStories } from '@/data/patient-stories'
 
 export function SocialProofSection() {
-  // Featured story (first one)
-  const featured = patientStories[0]
-  const otherStories = patientStories.slice(1, 3)
-
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
@@ -22,36 +18,10 @@ export function SocialProofSection() {
           </p>
         </div>
 
-        {/* Featured testimonial */}
-        <Card className="mb-10 md:mb-14 border-border bg-gradient-to-br from-primary/5 to-transparent p-6 md:p-10">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            {/* Avatar */}
-            <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl font-bold text-primary">
-                  {featured.name.charAt(0)}
-                </span>
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="flex-1">
-              <blockquote className="text-base md:text-lg text-foreground leading-relaxed mb-4 italic">
-                "{featured.story}"
-              </blockquote>
-              <div>
-                <p className="font-semibold text-foreground">{featured.name}</p>
-                <p className="text-sm text-muted">{featured.goal}</p>
-                <p className="text-xs text-muted mt-2">Fictional example</p>
-              </div>
-            </div>
-          </div>
-        </Card>
-
-        {/* Additional stories grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-10">
-          {otherStories.map((story, index) => (
-            <Card key={index} className="border-border p-6 md:p-8">
+        {/* Stories grid - equal width cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10">
+          {patientStories.slice(0, 3).map((story, index) => (
+            <Card key={index} className="border-border p-6 md:p-8 flex flex-col">
               <div className="mb-6">
                 <div className="inline-flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -65,8 +35,8 @@ export function SocialProofSection() {
                   </div>
                 </div>
               </div>
-              <p className="text-base text-foreground leading-relaxed mb-4">
-                {story.story}
+              <p className="text-base text-foreground leading-relaxed mb-4 flex-1">
+                "{story.story}"
               </p>
               <p className="text-xs text-muted">Fictional example</p>
             </Card>
