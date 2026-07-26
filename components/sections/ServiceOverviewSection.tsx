@@ -23,7 +23,7 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
               What is an Initial Assessment?
             </h2>
             <p className="text-base md:text-lg text-muted leading-relaxed mb-6">
-              Your initial assessment is a comprehensive evaluation where we listen to your story, understand your goals, and identify the root cause of your symptoms. We&apos;re not just treating the symptom—we&apos;re solving the problem.
+              Your initial assessment is a thorough evaluation where we listen to your story, understand your goals, and explore the contributing factors behind your symptoms — then work with you to build a personalized plan.
             </p>
             <div className="space-y-4 mb-8">
               <div className="flex gap-3">
@@ -39,7 +39,7 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
                   <span className="text-primary font-semibold text-sm">✓</span>
                 </div>
                 <p className="text-base text-foreground">
-                  <strong>Clear diagnosis</strong> — We explain what&apos;s happening and why, in plain language.
+                  <strong>Clear explanation of findings</strong> — We share what we observed and why, in plain language.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -47,7 +47,7 @@ export function ServiceOverviewSection({ onBookClick }: ServiceOverviewSectionPr
                   <span className="text-primary font-semibold text-sm">✓</span>
                 </div>
                 <p className="text-base text-foreground">
-                  <strong>Personalized plan</strong> — Your recovery path, tailored to your goals and lifestyle.
+                  <strong>Personalized plan</strong> — A starting point tailored to your goals, reviewed as you progress.
                 </p>
               </div>
             </div>

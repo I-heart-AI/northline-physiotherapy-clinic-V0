@@ -16,20 +16,20 @@ export function WhyChooseUsSection({ onBookClick }: WhyChooseUsSectionProps) {
 
   const benefits = [
     {
-      title: 'Expert Practitioners',
-      description: 'Our team brings years of experience across diverse patient needs and recovery scenarios.',
+      title: 'Experienced Physiotherapist',
+      description: 'Maya brings nine years of experience across a range of patient needs and recovery journeys.',
     },
     {
       title: 'Clear Communication',
-      description: 'We explain your condition and recovery plan in language you understand. No jargon.',
+      description: 'We explain our findings and your plan in language you understand. No jargon.',
     },
     {
       title: 'One-on-One Attention',
-      description: 'Every session is tailored to you. Your progress matters, and we adjust your plan accordingly.',
+      description: 'Every session is dedicated to you. Your progress is reviewed regularly and your plan adjusted accordingly.',
     },
     {
-      title: 'Proven Results',
-      description: 'Patients leave our clinic with confidence, a clear path forward, and measurable progress.',
+      title: 'Progress Reviewed Over Time',
+      description: 'Patients work toward meaningful milestones with a plan that evolves as their situation changes.',
     },
   ]
 

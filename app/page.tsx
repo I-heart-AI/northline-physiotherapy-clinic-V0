@@ -8,6 +8,7 @@ import { BookingDialog } from '@/components/booking/BookingDialog'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServiceOverviewSection } from '@/components/sections/ServiceOverviewSection'
 import { AssessmentProcessSection } from '@/components/sections/AssessmentProcessSection'
+import { MeetMayaSection } from '@/components/sections/MeetMayaSection'
 import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection'
 import { SocialProofSection } from '@/components/sections/SocialProofSection'
 import { FAQSection } from '@/components/sections/FAQSection'
@@ -30,6 +31,7 @@ export default function Page() {
         <HeroSection onBookClick={() => handleBookClick('hero')} />
         <ServiceOverviewSection onBookClick={() => handleBookClick('service-overview')} />
         <AssessmentProcessSection onBookClick={() => handleBookClick('process')} />
+        <MeetMayaSection />
         <WhyChooseUsSection onBookClick={() => handleBookClick('why-choose-us')} />
         <SocialProofSection />
         <FAQSection />

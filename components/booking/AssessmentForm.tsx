@@ -157,11 +157,11 @@ export function AssessmentForm({ onSubmit, isLoading, source }: AssessmentFormPr
         disabled={isLoading}
         className="w-full bg-primary hover:bg-primary-light text-white"
       >
-        {isLoading ? 'Booking...' : 'Complete Booking'}
+        {isLoading ? 'Submitting...' : 'Request Appointment'}
       </Button>
 
       <p className="text-xs text-muted text-center">
-        This is a prototype. No data is stored or transmitted.
+        This form is a prototype and does not confirm a real appointment or transmit any information.
       </p>
     </form>
   )

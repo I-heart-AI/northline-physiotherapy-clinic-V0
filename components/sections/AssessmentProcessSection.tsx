@@ -22,12 +22,12 @@ export function AssessmentProcessSection({ onBookClick }: AssessmentProcessSecti
     {
       number: '2',
       title: 'Assess & Diagnose',
-      description: 'Through careful physical assessment, we identify movement patterns, strength imbalances, and pain sources. We explain our findings clearly so you understand exactly what&apos;s happening.',
+      description: 'Through careful physical assessment, we explore movement patterns, strength imbalances, and contributing factors. We share our findings in plain language so you can understand what we observed.',
     },
     {
       number: '3',
       title: 'Plan & Progress',
-      description: 'Together, we create a realistic recovery plan with clear milestones. You know what to expect, and we adjust as you progress. No guesswork, just steady improvement.',
+      description: 'Together, we build a realistic rehabilitation plan with clear milestones. We explain what to expect at each stage and adjust your program as your progress is reviewed.',
     },
   ]
 
@@ -39,7 +39,7 @@ export function AssessmentProcessSection({ onBookClick }: AssessmentProcessSecti
             Our Three-Step Process
           </h2>
           <p className="text-base md:text-lg text-muted max-w-2xl">
-            Every assessment follows the same proven approach: we listen, we assess, and we plan. No shortcuts.
+            Every assessment follows the same structured approach: we listen, we assess, and we build a plan together. Progress is reviewed at each stage.
           </p>
         </div>
 

@@ -33,7 +33,7 @@ export const patientStories: PatientStory[] = [
     name: 'Sophie',
     goal: 'Chronic back pain relief',
     story:
-      'I\'ve had back pain for years and tried various approaches. The physiotherapist identified the root cause and created a personalized plan that actually addressed it.',
+      'I\'ve had back pain for years and tried various approaches. The physiotherapist explored the contributing factors and built a personalized plan that helped me understand what to work on.',
     outcome: 'Reduced pain levels, improved posture awareness, and regained confidence in daily activities',
     isPrototype: true,
     consentStatus: 'prototype',
